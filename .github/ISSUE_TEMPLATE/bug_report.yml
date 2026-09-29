@@ -39,7 +39,7 @@ body:
       placeholder: "Ожидаемое поведение"
     validations:
       required: true
- - type: textarea
+  - type: textarea
     id: actual
     attributes:
       label: "Фактический результат"
