@@ -1,5 +1,5 @@
-name: Отчет о дефекте
-description: Шаблон для оформления отчета о дефекте
+name: "Отчет о дефекте"
+description: "Шаблон для оформления отчета о дефекте"
 title: "[Ошибка]: "
 labels: ["bug"]
 body:
@@ -10,81 +10,78 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Описание
-      description: Краткое описание дефекта
-      placeholder: Что происходит не так?
+      label: "Описание"
+      description: "Краткое описание дефекта"
+      placeholder: "Что происходит не так?"
     validations:
       required: true
   - type: textarea
     id: preconditions
     attributes:
-      label: Предусловия
-      description: Состояние системы перед воспроизведением
-      placeholder: Приложение запущено, пользователь авторизован
+      label: "Предусловия"
+      description: "Состояние системы перед воспроизведением"
+      placeholder: "Приложение запущено"
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: Шаги воспроизведения
-      description: Последовательность действий
-      placeholder: |
-        1. Открыть ...
-        2. Нажать ...
-        3. Ввести ...
+      label: "Шаги воспроизведения"
+      description: "Последовательность действий"
+      placeholder: "1. Открыть; 2. Нажать; 3. Ввести"
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Ожидаемый результат
-      description: Как приложение должно работать
-      placeholder: Ожидаемое поведение
+      label: "Ожидаемый результат"
+      description: "Как приложение должно работать"
+      placeholder: "Ожидаемое поведение"
     validations:
       required: true
-       - type: textarea
+ - type: textarea
     id: actual
     attributes:
-      label: Фактический результат
-      description: Как приложение работает на самом деле
-      placeholder: Наблюдаемое поведение
+      label: "Фактический результат"
+      description: "Как приложение работает на самом деле"
+      placeholder: "Наблюдаемое поведение"
     validations:
       required: true
   - type: textarea
     id: screenshots
     attributes:
-      label: Скриншоты / Доп. материалы
-      description: Перетащите изображения или вставьте ссылки
+      label: "Скриншоты / Доп. материалы"
+      description: "Перетащите изображения или вставьте ссылки"
     validations:
       required: false
   - type: dropdown
     id: priority
     attributes:
-      label: Приоритет
-      description: Срочность исправления
+      label: "Приоритет"
+      description: "Срочность исправления"
       options:
-        - Высокий
-        - Средний
-        - Низкий
+        - "Высокий"
+        - "Средний"
+        - "Низкий"
     validations:
       required: true
   - type: dropdown
     id: severity
     attributes:
-      label: Серьезность
-      description: Степень влияния на работу приложения
+      label: "Серьезность"
+      description: "Степень влияния на работу приложения"
       options:
-        - Критическая
-        - Значительная
-        - Незначительная
-        - Косметическая
+        - "Критическая"
+        - "Значительная"
+        - "Незначительная"
+        - "Косметическая"
     validations:
       required: true
   - type: checkboxes
     id: existing-check
     attributes:
-      label: Проверка
-      description: Подтвердите ознакомление с существующими отчетами
+      label: "Проверка"
+      description: "Подтвердите ознакомление с существующими отчетами"
       options:
-        - label: Я ознакомился с уже существующими отчетами о дефектах
+        - label: "Я ознакомился с уже существующими отчетами о дефектах"
           required: true
